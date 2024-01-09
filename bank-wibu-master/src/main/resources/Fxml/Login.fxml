@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.bankwibu.tubespbo.Controllers.LoginController">
+   <VBox alignment="CENTER" prefHeight="400.0" prefWidth="325.0" style="-fx-background-color: #192655;" AnchorPane.bottomAnchor="0.0">
+      <FontAwesomeIconView fill="#00a9ff" glyphName="BANK" size="125">
+         <VBox.margin>
+            <Insets bottom="5.0" />
+         </VBox.margin>
+      </FontAwesomeIconView>
+      <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+         <children>
+            <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="Wibu Bank!">
+               <font>
+                  <Font name="System Bold" size="48.0" />
+               </font>
+            </Text>
+         </children>
+      </HBox>
+      <Line endX="65.0" stroke="WHITE" style="-fx-stroke-width: 3;">
+         <VBox.margin>
+            <Insets right="190.0" />
+         </VBox.margin>
+      </Line>
+   </VBox>
+   <VBox alignment="CENTER" layoutX="236.0" layoutY="34.0" prefHeight="366.0" prefWidth="300.0" style="-fx-background-color: #65B741;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="325.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+      <HBox alignment="TOP_CENTER" prefHeight="41.0" prefWidth="275.0">
+         <children>
+            <Label text="Choose Your Account:" wrapText="true">
+               <font>
+                  <Font name="Futura LT Heavy" size="14.0" />
+               </font>
+               <HBox.margin>
+                  <Insets left="15.0" right="10.0" />
+               </HBox.margin>
+            </Label>
+            <ChoiceBox fx:id="acc_selector" prefWidth="150.0" style="-fx-background-color: #ffffff; -fx-cursor: HAND;">
+               <HBox.margin>
+                  <Insets right="15.0" />
+               </HBox.margin></ChoiceBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+      <Label fx:id="pAddress_lbl" alignment="BASELINE_LEFT" prefHeight="19.0" prefWidth="94.0" text="Payee Address:">
+         <VBox.margin>
+            <Insets bottom="5.0" right="100.0" top="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Futura LT Heavy" size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="pAddress_fld" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Payee Address" style="-fx-background-color: #65B741; -fx-border-color: #EEF0E5; -fx-border-width: 0 0 3 0;">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </TextField>
+      <Label text="Password:">
+         <VBox.margin>
+            <Insets bottom="5.0" right="130.0" />
+         </VBox.margin>
+         <font>
+            <Font name="Futura LT Heavy" size="14.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password_fld" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="30.0" prefWidth="200.0" promptText="Password" style="-fx-background-color: #65B741; -fx-border-color: #EEF0E5; -fx-border-width: 0 0 3 0;">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin></PasswordField>
+      <Button fx:id="login_btn" mnemonicParsing="false" prefHeight="35.0" prefWidth="125.0" style="-fx-background-radius: 5; -fx-background-color: #ffffff; -fx-cursor: HAND;" text="Login">
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Label fx:id="error_lbl" textFill="RED">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+         <VBox.margin>
+            <Insets bottom="15.0" />
+         </VBox.margin>
+   </VBox>
+</AnchorPane>
